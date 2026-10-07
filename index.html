@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marko Joviel M. Guinto · Unity Developer</title>
+  <meta name="description" content="Unity developer building gameplay, UI, and live-ops features for mobile games.">
+  <meta property="og:title" content="Marko Joviel M. Guinto · Unity Developer">
+  <meta property="og:description" content="Gameplay, UI, and live-ops features for mobile games.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joveguinto.github.io/">
+  <meta property="og:image" content="https://joveguinto.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://joveguinto.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Joviel Guinto</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#games">Other games</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li class="cta"><a class="btn small" href="assets/Marko_Joviel_M_Guinto_Resume.pdf">Resume</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Senior Unity Developer</p>
+      <h1>Marko Joviel M. Guinto</h1>
+      <p class="lede">I build gameplay, UI, and live-ops features for mobile games, turning design specs and Figma designs into working systems that can be tuned from remote config without an app update.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="assets/Marko_Joviel_M_Guinto_Resume.pdf">Resume (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/joviel-guinto">LinkedIn</a>
+        <a class="btn" href="mailto:jovielmg8746@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="project-head">
+        <div>
+          <p class="kicker">Featured project · Stratton Studios · 2025 to present</p>
+          <h2>Blockstone Island</h2>
+          <p class="section-intro">A block puzzle game where each win helps restore an island, live on Google Play. I build its live events, player profile features, and store and reward screens, along with the systems underneath them.</p>
+        </div>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.bountiful.blockstone">Google Play</a>
+      </div>
+
+      <article class="case">
+        <div class="media">
+          <video class="phone" src="assets/blockstone/live-events.mp4" poster="assets/blockstone/live-events-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pufferfish Passage: matchmaking fills to 100 players, a level is won, and the player advances on the event map while rivals drop out"></video>
+          <p class="media-note">Art by the Stratton Studios art team and design by its design team.</p>
+        </div>
+        <div>
+          <h3>Limited-time live events</h3>
+          <p>Events like Pufferfish Passage give players a reason to come back: a streak of puzzle wins carries them along an event map toward a grand prize.</p>
+          <p class="label">What I built</p>
+          <ul class="built">
+            <li>The event map and its sequences for advancing, losing a streak, and claiming rewards.</li>
+            <li>A run timer that keeps working offline and can't be cheated by changing the device clock.</li>
+            <li>Rewards and a grand prize driven by remote config, so the event can be tuned without an app update.</li>
+            <li>Save data that lets a run survive restarts.</li>
+          </ul>
+          <ul class="chips"><li>C#</li><li>uGUI</li><li>DOTween</li><li>Remote config</li><li>JSON saves</li></ul>
+        </div>
+      </article>
+
+      <article class="case flip">
+        <div class="media">
+          <video class="phone" src="assets/blockstone/profile.mp4" poster="assets/blockstone/profile-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Profile customization: browsing avatars, locked frames and badges, then equipping a new avatar and frame that appear on the HUD"></video>
+          <p class="media-note">Art by the Stratton Studios art team and design by its design team.</p>
+        </div>
+        <div>
+          <h3>Player profile customization</h3>
+          <p>Players collect avatar frames and badges from events, offers, and passes, then show them off on their profile, the HUD, and the leaderboards.</p>
+          <p class="label">What I built</p>
+          <ul class="built">
+            <li>The customization screen, with unlocked, locked, and coming-soon states.</li>
+            <li>One shared reward service that grants a cosmetic from any reward source.</li>
+            <li>Inspector tools so designers can set up cosmetic rewards by name.</li>
+          </ul>
+          <ul class="chips"><li>C#</li><li>ScriptableObjects</li><li>Editor scripting</li><li>uGUI</li></ul>
+        </div>
+      </article>
+
+      <article class="case pair">
+        <div class="media compare">
+          <p class="compare-title">Daily Rewards</p>
+          <div class="duo tall">
+            <figure><img src="assets/blockstone/figma-daily-rewards.jpg" alt="Figma design of the Daily Rewards popup" width="331" height="548" loading="lazy"><figcaption>Design</figcaption></figure>
+            <figure><img src="assets/blockstone/game-daily-rewards.jpg" alt="The Daily Rewards popup as built in the game" width="468" height="749" loading="lazy"><figcaption>In game</figcaption></figure>
+          </div>
+          <p class="compare-title">Shop offer</p>
+          <div class="duo wide">
+            <figure><img src="assets/blockstone/figma-shop.jpg" alt="Figma design of the Obbi's Bundles offer card in the shop" width="235" height="213" loading="lazy"><figcaption>Design</figcaption></figure>
+            <figure><img src="assets/blockstone/game-shop.jpg" alt="The Obbi's Bundle offer card as built in the game shop" width="463" height="420" loading="lazy"><figcaption>In game</figcaption></figure>
+          </div>
+          <p class="media-note">Art by the Stratton Studios art team and designs by its design team. Numbers differ because the game reads them from live config.</p>
+        </div>
+        <div>
+          <h3>From Figma to finished screen</h3>
+          <p>I turn Figma designs into working screens: store, offers, and reward popups that hold up from small phones to notched displays.</p>
+          <p class="label">What I built</p>
+          <ul class="built">
+            <li>Store, IAP offer, and reward screens, built from shared prefabs so one change lands everywhere.</li>
+            <li>Layouts that adapt to screen size and safe areas.</li>
+            <li>Popup sequencing fixes so offers and tutorials never overlap.</li>
+          </ul>
+          <ul class="chips"><li>uGUI</li><li>Prefab variants</li><li>Safe areas</li><li>TextMeshPro</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="games">
+    <div class="wrap">
+      <p class="kicker">Earlier and indie work</p>
+      <h2>Other games</h2>
+      <div class="grid">
+
+        <article class="card">
+          <img src="assets/games/kata.jpg" alt="Kata key art: a giant tree on a small island" width="616" height="353" loading="lazy">
+          <div class="card-body">
+            <h3>Kata</h3>
+            <p class="meta">Katakata Creative · PC</p>
+            <p>Story-driven adventure platformer centered around Filipino culture and arts. I implemented UI, audio triggers, platforming systems, and collectibles.</p>
+            <p class="award">Indie Winner, CCP Pitch Deck Competition 2022</p>
+            <a class="more" href="https://store.steampowered.com/app/2561870/Kata/">View on Steam</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/games/trash-teammates.jpg" alt="Trash Teammates key art: toy characters climbing through a trash compactor" width="616" height="353" loading="lazy">
+          <div class="card-body">
+            <h3>Trash Teammates</h3>
+            <p class="meta">Katakata Creative · PC</p>
+            <p>Couch co-op endless climber about toys escaping a trash compactor. I worked on floor spawning and built several of the floors.</p>
+            <p class="award">3rd Place, DOST Level Up Game Dev Challenge 2024</p>
+            <a class="more" href="https://store.steampowered.com/app/3219330/Trash_Teammates/">View on Steam</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/games/hope-town-hero.jpg" alt="Hope Town Hero screenshot: the player character exploring Hope Town" width="720" height="324" loading="lazy">
+          <div class="card-body">
+            <h3>Hope Town Hero</h3>
+            <p class="meta">Secret6 for Plan International · Android</p>
+            <p>Educational story game built in Unity. I developed the onboarding and 2D cutscene systems and built the game UI.</p>
+            <a class="more" href="https://play.google.com/store/apps/details?id=com.secret6.HopeTownHero">View on Google Play</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="list-title">Web games for EA/Pogo, at Secret6</h3>
+      <ul class="plain-list">
+        <li>
+          <div><strong>Boggle Bash 2</strong> · Competitive word game with power-ups. I developed the letter-grid input and word logic, a battle pass, the audio system, and game UI.</div>
+          <a href="https://www.pogo.com/games/boggle-bash">Play on Pogo</a>
+        </li>
+        <li>
+          <div><strong>Trivial Pursuit</strong> · Online trivia game. I developed the audio system and built game UI from client feedback.</div>
+          <a href="https://www.pogo.com/games/trivial-pursuit-online">Play on Pogo</a>
+        </li>
+        <li>
+          <div><strong>Cluedo</strong> · Puzzle and deduction game. I implemented the audio system, game UI, and backend-to-frontend connections.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <p class="kicker">Toolkit</p>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Unity &amp; C#</h3>
+          <p>Unity 6 (2D/3D), uGUI, Animator, DOTween, TextMeshPro, Input System, ScriptableObjects, Editor scripting</p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>Event-driven architecture, dependency injection, JSON save systems, REST API integration</p>
+        </div>
+        <div>
+          <h3>Live-ops</h3>
+          <p>Remote config, feature flags and A/B tests, rewarded ads, in-app purchases, push notifications</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>Git, GitHub, Visual Studio, Jira, Figma, adb/logcat, Claude Code</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's talk</h2>
+      <p class="section-intro center">Open to Unity developer roles. The fastest way to reach me is email.</p>
+      <div class="actions center">
+        <a class="btn primary" href="mailto:jovielmg8746@gmail.com">jovielmg8746@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/joviel-guinto">LinkedIn</a>
+        <a class="btn" href="assets/Marko_Joviel_M_Guinto_Resume.pdf">Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  // Clips play muted on a loop; tapping one pauses it. Visitors who ask for reduced motion get paused clips with controls.
+  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  for (const clip of document.querySelectorAll("video.phone")) {
+    if (reduceMotion) { clip.removeAttribute("autoplay"); clip.pause(); clip.controls = true; }
+    clip.addEventListener("click", () => clip.paused ? clip.play() : clip.pause());
+  }
+</script>
+
+<footer>
+  <div class="wrap">© 2026 Marko Joviel M. Guinto</div>
+</footer>
+
+</body>
+</html>
