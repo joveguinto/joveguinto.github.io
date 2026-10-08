@@ -45,7 +45,7 @@
         <a class="btn primary" href="#work">See my work</a>
         <a class="btn" href="assets/Marko_Joviel_M_Guinto_Resume.pdf">Resume (PDF)</a>
         <a class="btn" href="https://www.linkedin.com/in/joviel-guinto">LinkedIn</a>
-        <a class="btn" href="mailto:jovielmg8746@gmail.com">Email</a>
+        <a class="btn" href="mailto:jovielmg8746@gmail.com" data-email="jovielmg8746@gmail.com">Email</a>
       </div>
     </div>
   </section>
@@ -214,7 +214,7 @@
       <h2>Let's talk</h2>
       <p class="section-intro center">Open to Unity developer roles. The fastest way to reach me is email.</p>
       <div class="actions center">
-        <a class="btn primary" href="mailto:jovielmg8746@gmail.com">jovielmg8746@gmail.com</a>
+        <a class="btn primary" href="mailto:jovielmg8746@gmail.com" data-email="jovielmg8746@gmail.com">jovielmg8746@gmail.com</a>
         <a class="btn" href="https://www.linkedin.com/in/joviel-guinto">LinkedIn</a>
         <a class="btn" href="assets/Marko_Joviel_M_Guinto_Resume.pdf">Resume (PDF)</a>
       </div>
@@ -229,6 +229,17 @@
   for (const clip of document.querySelectorAll("video.phone")) {
     if (reduceMotion) { clip.removeAttribute("autoplay"); clip.pause(); clip.controls = true; }
     clip.addEventListener("click", () => clip.paused ? clip.play() : clip.pause());
+  }
+
+  // Email buttons also copy the address, since a mailto link does nothing on a PC with no email app set up.
+  for (const link of document.querySelectorAll("a[data-email]")) {
+    link.addEventListener("click", async () => {
+      const label = link.textContent;
+      let shown = "Email copied";
+      try { await navigator.clipboard.writeText(link.dataset.email); } catch { shown = link.dataset.email; }
+      link.textContent = shown;
+      setTimeout(() => { link.textContent = label; }, 2500);
+    });
   }
 </script>
 
